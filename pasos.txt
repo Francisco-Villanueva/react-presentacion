@@ -1,0 +1,31 @@
+1- instalar react y react-dom:
+        npm install react react-dom
+
+2- Configuración de un bundler (como Vite, Webpack, Parcel, etc.)
+
+Vamos a usar Parcel para el ejemplo. En la practica usaremos Vite.
+        npm install -D parcel
+
+
+3- Configurar el package.json, agregando el script 'start' :
+
+    
+    {
+        ...
+
+        "scripts": {
+            "start": "parcel index.html"
+        },
+
+        ...
+    }
+   
+
+4- Levantar el "proyecto" corriendo por consola:
+
+        "npm start"
+
+5- Visualización en el navegador:
+
+Parcel iniciará un servidor de desarrollo y te dará una URL (por defecto http://localhost:1234).
+Abre esa URL en tu navegador para ver tu aplicación React en funcionamiento.

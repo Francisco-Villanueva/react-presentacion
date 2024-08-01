@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #32668b;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-items a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-header{
+    display: flex ;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.course-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* border: 1px green  solid; */
+    
+}
+
+.description-text, .course-info {
+    flex: 1;
+    min-width: 400px;
+    text-align: left;
+    line-height: 1.5;
+    height: 100%;
+    background-color: #7f7e7e17;
+    border-radius: 5px;
+}
+
+.description-text{
+    padding: 1em;
+    
+    height: 100%;
+}
+
+.course-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+.course-info div {
+    padding: 0em 1em;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    margin-top: 20px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    .course-description {
+        flex-direction: column-reverse;
+    }
+    
+    .nav-items {
+        width: 80%;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+     
+    }
+
+ 
+    .logo {
+        margin-bottom: 10px;
+    }
+    .course-description{
+        font-size: 12px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0 10px;
+    }
+    
+    .nav-items a {
+        font-size: 14px;
+    }
+    
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    #message {
+        font-size: 14px;
+    }
+}
